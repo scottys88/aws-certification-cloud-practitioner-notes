@@ -266,6 +266,8 @@ It is not really a service. It is a way to download AWS compliance documentation
 
 ## Amazon GuardDuty
 
+> AI service that monitors for anomaly
+
 Intelligent and continuos threat discovery service to protect AWS Account. It uses machine learning algorithms to anomaly detection. We can setup cloudwatch events rules to be notified in case of any anomaly detection. These cloudwatch event rules can trigger lambdas or sns topics.
 
 Input data includes:
@@ -278,7 +280,7 @@ Input data includes:
 
 ## Amazon Inspector
 
-Amazon Inspector is an automated security assessment service for EC2 instances. It analyzes the running OS against known vulnerabilities and unintended network access.
+Amazon Inspector is an automated security assessment service for **EC2 instances**. It analyzes the running OS against known vulnerabilities and unintended network access.
 
 - Amazon Inspector must be installed on OS in EC2 Instances. The assessment can run in scheduled time and in target groups.
 - After the assessment it sends/provides a report of vulnerabilities.
@@ -291,6 +293,8 @@ Amazon Inspector is an automated security assessment service for EC2 instances. 
 
 ## AWS Config
 
+> Keeps track of the configuration changes over time. For example to see if we're compliant with certain policies.
+
 With AWS Config we can track, audit and record the resources configurations and the compliance of them over time.
 
 - Possibility of storing the configuration data into S3 (analyzed by Athena)
@@ -302,6 +306,8 @@ With AWS Config we can track, audit and record the resources configurations and 
 
 ## Amazon Macie
 
+> Used for removing PII using Machine Learning
+
 Amazon Macie is a fully managed data security and data privacy service to protect sensitive data in AWS, using machine learning.
 
 Macie helps identify and alert about sensitive data (such as PII, personal identifiable information)
@@ -311,6 +317,8 @@ We can customize our own sensitive data types
 <p align="center" width="100%"><img src="assets/macie.jpg" alt="macie" width="500"/></p>
 
 ## CloudTrail
+
+> Kinda similar to Config in that it tracks changes to config etc, but not for tracking applications. I get confused between cloudwatch and cloud trail!
 
 CloudTrail Track API calls made by users within account. It is part of [Monitoring](../cloud-monitoring/README.md/#cloudtrail) services.
 
