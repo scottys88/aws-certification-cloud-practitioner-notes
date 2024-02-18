@@ -293,7 +293,7 @@ Amazon Inspector is an automated security assessment service for **EC2 instances
 
 ## AWS Config
 
-> Keeps track of the configuration changes over time. For example to see if we're compliant with certain policies.
+> Keeps track of the configuration changes over time. For example to see if we're compliant with certain policies. It is per region!
 
 With AWS Config we can track, audit and record the resources configurations and the compliance of them over time.
 
@@ -337,6 +337,8 @@ We can integrate with EventBridge events and Amazon Detective.
 
 ## Amazon Detective
 
+> For going deeper than Macie, Guard Duty, Security hub to find the root cause of the issue.
+
 It is a service to identify the root cause of security issues or suspicious activities.
 
 Why do amazon have this service? With GuardDuty, Macie and Security Hub we can identify multiple security issues, but sometime we need a deeper analysis to detect what is causing that problem. So Amazon Detective analyzes, investigates and quickly identify the root cause.
@@ -371,6 +373,19 @@ Root user is the main account registered in AWS. It has complete access to all A
 - Configure an Amazon S3 Bucket to enable MFA
 - Edit or delete Amazon S3 bucket policy that includes a invalid VPC or VPC endpoint ID
 - SignUp to GovCloud
+
+## IAM Access Analyser
+
+- Find out with resources are shared externally
+  - S3
+  - IAM Roles
+  - KMS Keys
+  - Lambda
+  - SQS Queues
+  - Secrets Manager Service
+    
+- Define **Zone of trust** = AWS Account or AWS Organisation
+- ANything outsode of zone of trusts => is flagged as a "finding"
 
 ## Summary
 
