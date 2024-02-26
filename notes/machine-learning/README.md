@@ -52,7 +52,7 @@ Amazon Translate allows you to localize content - such as websites and applicati
 
 ## Amazon Lex
 
-Same technology of Alexa and it is a Automatic Speech Recognition (ASR) to convert speech to text and it helps to build chatbot and call center bots. We can integrate with any application.
+Same technology of Alexa and it is a Automatic Speech Recognition (ASR) to convert speech to text and it helps to build chatbot and call center bots. We can integrate with any application. Recognize the intent of phone calls and text so can help build chat bots.
 
 - Natural Language Understanding to recognize the intent of text
 
@@ -67,6 +67,8 @@ It is a omnichannel cloud contact center.
 <p align="center" width="100%"><img src="assets/lex-connect.jpg" alt="lex-connect" width="600"/></p>
 
 ## Amazon Comprehend
+
+*Comprehend the meaning of of and relationships in text files*. 
 
 It is a Natural Language Processing (NLP) service. It is fully managed and serverless. Uses machine learning to do understand of text:
 
