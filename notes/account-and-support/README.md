@@ -108,6 +108,14 @@ AWS Has multiple types of customer support plans, the pricing of each one is var
 
 <p align="center" width="100%"><img src="assets/support-plans-pricing.jpg"  alt="support-plans-pricing" width="400"></p>
 
+## AWS Resource Access Manager (AWS RAM)
+
+- Share AWS resources that you own with other AWS accounts.
+- Share any account within your organisation
+- Avoid Duplicate resources
+
+
+
 **Basic Support:**
 
 - Free for all customers
